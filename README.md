@@ -4,6 +4,10 @@ A travel journal that displays trip entries as a vertical list of cards.
 
 Each entry includes a photo, country, location, travel dates, a short description, and a Google Maps link. Built as a composable React app with data mapped into a reusable `Entry` component.
 
+## Tech stack
+
+**Frontend:** React, Vite
+
 ## Features
 
 - Journal entries rendered from a data array
