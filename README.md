@@ -1,12 +1,47 @@
-# React + Vite
+# Travel Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A travel journal that displays trip entries as a vertical list of cards.
 
-Currently, two official plugins are available:
+Each entry includes a photo, country, location, travel dates, a short description, and a Google Maps link. Built as a composable React app with data mapped into a reusable `Entry` component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Journal entries rendered from a data array
+- Country, location, date range, and description per trip
+- External Google Maps links
+- Responsive card layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prerequisites
+
+- Node.js 20+
+- npm
+
+## Getting started
+
+```sh
+git clone https://github.com/jvchi/travel-journal.git
+cd travel-journal
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+### Build
+
+```sh
+npm run build
+npm run preview
+```
+
+## Project structure
+
+```
+src/
+  components/
+    Header.jsx         # page header
+    Entry.jsx          # single journal entry card
+    data.js            # trip data
+  App.jsx
+  assets/              # local images
+```
